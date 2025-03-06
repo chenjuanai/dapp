@@ -1,0 +1,26 @@
+{
+    "name": "my-dapp",
+    "version": "1.0.0",
+    "description": "A DApp for permit transactions with MyMergedContract",
+    "main": "index.js",
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "preview": "vite preview",
+      "deploy": "vercel"
+    },
+    "dependencies": {
+      "@wagmi/core": "2.16.5",
+      "@wagmi/connectors": "5.7.8",
+      "ethers": "6.13.5",
+      "react": "18.2.0",
+      "react-dom": "19.0.0",
+      "viem": "2.23.5"
+    },
+    "devDependencies": {
+      "vite": "6.2.0",
+      "@vitejs/plugin-react": "4.3.4"
+    },
+    "author": "Your Name",
+    "license": "MIT"
+  }
