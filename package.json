@@ -1,5 +1,5 @@
 {
-  "name": "my-dapp",
+  "name": "chen-dapp",
   "version": "1.0.0",
   "description": "A DApp for permit transactions with MyMergedContract",
   "main": "index.js",
