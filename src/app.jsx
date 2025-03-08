@@ -1,4 +1,4 @@
-import { useAccount, useConnect, useDisconnect, useSignTypedData, useWriteContract } from '@wagmi/core'
+import { useAccount, useConnect, useDisconnect, useSignTypedData, useWriteContract } from 'wagmi'
 import { ethers } from 'ethers'
 import { useState } from 'react'
 import { myMergedContractABI } from './abi'
@@ -12,9 +12,9 @@ function App() {
   const [signature, setSignature] = useState(null)
   const [loading, setLoading] = useState(false)
 
-  const contractAddress = '0xYOUR_CONTRACT_ADDRESS' // 替换为实际合约地址
+  const contractAddress = '0x9b6ff26d132e3cd39cdfc138a4527f3e8635aa80' // 替换为实际合约地址
   const ethAmount = ethers.parseEther('0.1') // 示例 ETH 金额
-  const usdtAmount = ethers.parseEther('100') // 示例 USDT 金额
+  const usdtAmount = ethers.parseUnits('100') // 示例 USDT 金额
 
   const handleConnect = (connector) => connect({ connector })
 
